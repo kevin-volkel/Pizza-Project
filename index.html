@@ -15,11 +15,11 @@
     <link rel="shortcut icon" href="pizza.png" type="image/x-icon">
 </head>
 
-<body>
+<body style="border-width:thick; border-style: solid; border-color: orange;" >
 
-    <form action="" method="POST" >
+    <form action="" method="POST">
         <fieldset>
-            <legend>User Information</legend>
+            <legend><strong>User Information</strong></legend>
             <!-- input boxes -->
             <ul>
                 <li><label for="username">User Name: </label>
@@ -30,7 +30,7 @@
             </ul>
         </fieldset>
         <fieldset>
-            <legend>What drink do you want?</legend>
+            <legend><strong>What drink do you want?</strong></legend>
             <!-- Radio Buttons -->
             <ul>
                 <li><input type="radio" name="drink" id="user.drink.coke"> Coke</li>
@@ -40,7 +40,7 @@
             </ul>
         </fieldset>
         <fieldset>
-            <legend>Pizza Preference</legend>
+            <legend><strong>Pizza Preference</strong></legend>
             <!-- Checkboxes -->
             <ul>
                 <li><input type="checkbox" name="toppings" id="user.toppings.plain"> Plain</li>
@@ -50,12 +50,20 @@
             </ul>
         </fieldset>
         <fieldset>
-            <legend>Special Instructions</legend>
+            <ul>
+                <li><label for>How cooked should we make your pizza?</label></li>
+                <li>Just Plain Dough|<input type="range" name="toasty" id="user.toasty">|Completely Black</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Special Instructions</strong></legend>
             <ul>
                 <li><label for="instructions">Special Instructions:</label></li>
                 <li></li><textarea name="instructions" id="user.instructions" cols="30" rows="10"></textarea></li>
             <!-- Submit Button -->
-                <li><button type="submit">Submit</button></li>
+                <br><button type="submit" style="padding: 0">
+                    <img src="Submit Button.jpg" alt="Submit Button" width="150" height="100" style="padding: 0;">
+                </button>
             </ul>
         </fieldset>
 
