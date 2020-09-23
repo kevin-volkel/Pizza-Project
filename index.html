@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kevin Volkel">
+    <meta name="description" content="Order your pizza here!">
+
+    <meta name="og:title" content="Pizza Time">
+    <meta name="og:description" content="It's Pizza Time">
+    <meta name="og:image" content="">
+
+    <title>Pizza Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pizza.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <form action="" method="POST" >
+        <fieldset>
+            <legend>User Information</legend>
+            <!-- input boxes -->
+            <ul>
+                <li><label for="username">User Name: </label>
+                    <input type="text" id="username" name=user.username></li>
+
+                <li><label for="password">Password: </label>
+                    <input type="text" id="password" name=user.password></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <!-- Radio Buttons -->
+            <ul>
+                <li><input type="radio" name="drink" id="user.drink.coke"> Coke</li>
+                <li><input type="radio" name="drink" id="user.drink.dietCoke"> Diet Coke</li>
+                <li><input type="radio" name="drink" id="user.drink.sprite"> Sprite</li>
+                <li><input type="radio" name="drink" id="user.drink.water"> Water</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Preference</legend>
+            <!-- Checkboxes -->
+            <ul>
+                <li><input type="checkbox" name="toppings" id="user.toppings.plain"> Plain</li>
+                <li><input type="checkbox" name="toppings" id="user.toppings.pepperoni"> Pepperoni</li>
+                <li><input type="checkbox" name="toppings" id="user.toppings.chicken"> Chicken</li>
+                <li><input type="checkbox" name="toppings" id="user.toppings.sausage"> Sausage</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <ul>
+                <li><label for="instructions">Special Instructions:</label></li>
+                <li></li><textarea name="instructions" id="user.instructions" cols="30" rows="10"></textarea></li>
+            <!-- Submit Button -->
+                <li><button type="submit">Submit</button></li>
+            </ul>
+        </fieldset>
+
+            
+    </form>
+</body>
+</html>
